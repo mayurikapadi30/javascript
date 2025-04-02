@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       // 1. var (function-scoped ,can be redeclared and update)
+        var x=10;
+        console.log(x);
+        
+        var x = 20; //Redeclaration allowed
+        console.log(x);
+
+        //2.let
+        let y =30;
+        console.log(y);
+
+        y = 40; // Allowed (updating the value)
+        console.log(y);
+
+        //3.const
+        const m = 50;
+        console.log(m);
+
+        //Primitive Data type (immutable,stored directly in memory)
+        //1.Number
+        let age = 25; //integer
+        let price = 99.99; //floating point 
+        let notaNumber =  NaN;// not-a-Number
+
+        //2.string
+        let name = "Alice"; 
+        let greeting = 'Hello'; 
+        let message = `Hi, ${name}`; // Template literal
+
+        //3.Boolean
+        let isActive = true;
+        let hasPermission = false;
+
+        //4.Undefined
+        let notDefined;
+        console.log(notDefined); // undefined
+
+        //Null
+        let empty = null;
+        console.log(empty); // null
+
+        // Non-Primitive data types 
+        //Array
+        let colors = ["red", "green", "blue"];  
+        console.log(colors[1]); // green  
+        console.log(typeof colors); // "object"
+
+        //Function
+        function greet() {  
+    return "Hello, World!";  
+    }  
+    console.log(greet()); // "Hello, World!"  
+    console.log(typeof greet); // "function"
+
+    //Date
+    let today = new Date();  
+    console.log(today); // Current date and time  
+    console.log(typeof today); // "object"
+
+    //Checking Data Types
+    console.log(typeof 42); // "number"
+    console.log(typeof "hello"); // "string"
+    console.log(typeof true); // "boolean"
+    console.log(typeof undefined); // "undefined"
+    console.log(typeof null); // "object" (a known JavaScript quirk)
+    console.log(typeof {}); // "object"
+    console.log(typeof []); // "object"
+    console.log(typeof function(){}); // "function"
+
+    // multilple
+    const sNmae=[
+            {
+                name:"MAYURI",
+                age:16,
+                course:"Bsc-IT"
+
+            },
+            {
+                name:"DIKSHA",
+                age:16,
+                course:"Bsc-IT"
+
+            },
+            {
+                name:"JIDNYASA",
+                age:16,
+                course:"Bsc-IT"
+
+            },
+            {
+                name:"KETAN",
+                age:16,
+                course:"Bcom"
+
+            },
+            {
+                name:"KETKI",
+                age:16,
+                course:"BMS"
+
+            }]
+
+
+
+
+        
+        
+
+
+
+
+       
+       
+    </script>
+</body>
+</html>
